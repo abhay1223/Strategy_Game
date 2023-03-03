@@ -304,3 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameMusic: {fileID: 3888713912953827337}
   gameSFX: {fileID: 3888713912953827338}
+  GameMusic:
+  - {fileID: 8300000, guid: 132361c515527e340b7830d7623f6d5b, type: 3}
+  GameSFX:
+  - {fileID: 8300000, guid: bba63b1a27b6bca428ab17eded527d6d, type: 3}
