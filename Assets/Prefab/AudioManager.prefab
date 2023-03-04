@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -172,9 +172,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -304,7 +304,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameMusic: {fileID: 3888713912953827337}
   gameSFX: {fileID: 3888713912953827338}
-  GameMusic:
+  gameMusicClips:
   - {fileID: 8300000, guid: 132361c515527e340b7830d7623f6d5b, type: 3}
-  GameSFX:
+  - {fileID: 8300000, guid: a8ed90a96aab09947a86a015897b9050, type: 3}
+  gameSFXClips:
   - {fileID: 8300000, guid: bba63b1a27b6bca428ab17eded527d6d, type: 3}
+  musicVolumeSlider: {fileID: 0}
+  sfxVolumeSlider: {fileID: 0}

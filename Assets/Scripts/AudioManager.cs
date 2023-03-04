@@ -45,12 +45,13 @@ public class AudioManager : MonoBehaviour
         MusicVolumeSlider();
         SFXVolumeSlider();
     }
-    private void MusicVolumeSlider(){
-        musicVolumeSlider.value = gameMusic.volume;
+
+    public void MusicVolumeSlider(){
+       gameMusic.volume =  musicVolumeSlider.value;
     }
 
-    private void SFXVolumeSlider(){
-        sfxVolumeSlider.value = gameSFX.volume;
+    public void SFXVolumeSlider(){
+       gameSFX.volume = sfxVolumeSlider.value;
     }
 
 
