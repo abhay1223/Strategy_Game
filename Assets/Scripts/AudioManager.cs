@@ -41,6 +41,14 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    public void PlaySFX(int i){
+        if(gameSFXClips[i] == null){
+            Debug.Log("SFX is missing ");
+            return;
+        }else{
+            gameSFX.PlayOneShot(gameSFXClips[i]);
+        }
+    }
     private void Update() {
         MusicVolumeSlider();
         SFXVolumeSlider();
@@ -56,10 +64,12 @@ public class AudioManager : MonoBehaviour
 
 
     public void ToggleSFX(){
+        gameSFX.PlayOneShot(gameSFXClips[0]);
         gameSFX.mute = !gameSFX.mute;
     }
 
     public void ToggleMusic(){
+        gameSFX.PlayOneShot(gameSFXClips[0]);
         gameMusic.mute = !gameMusic.mute;
     }
 }

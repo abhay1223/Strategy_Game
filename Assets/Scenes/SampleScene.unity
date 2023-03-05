@@ -948,8 +948,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 183655081}
-        m_TargetAssemblyTypeName: OpeningPanel, Assembly-CSharp
-        m_MethodName: OpenPane
+        m_TargetAssemblyTypeName: OpeningOrClosingPanel, Assembly-CSharp
+        m_MethodName: OpenPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1383,10 +1383,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1439070821}
     m_Modifications:
-    - target: {fileID: 6340555257164187217, guid: 5281f83d9c0abe745b6f38a282a61f87, type: 3}
-      propertyPath: spriteForMusic.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6340555257164187229, guid: 5281f83d9c0abe745b6f38a282a61f87, type: 3}
       propertyPath: m_Name
       value: PanelOptionsForMusicAndSFX
