@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 197376113}
   - component: {fileID: 197376112}
   - component: {fileID: 197376115}
+  - component: {fileID: 197376116}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -241,6 +242,47 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &197376116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197376111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d205552cefca614db00a9dc32b3d31e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  clampArea: 10
+--- !u!1 &198693845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7356255827884444815, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+  m_PrefabInstance: {fileID: 1282295664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &335891496 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7356255827644134790, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+  m_PrefabInstance: {fileID: 1282295664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &538264750 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7356255827106661510, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+  m_PrefabInstance: {fileID: 1282295664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &658581007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -251,11 +293,11 @@ PrefabInstance:
     - target: {fileID: 3888713912953827340, guid: 9469555e9db082e4786acfed3e53e5c8, type: 3}
       propertyPath: sfxVolumeSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 335891496}
     - target: {fileID: 3888713912953827340, guid: 9469555e9db082e4786acfed3e53e5c8, type: 3}
       propertyPath: musicVolumeSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 538264750}
     - target: {fileID: 4069763484767800948, guid: 9469555e9db082e4786acfed3e53e5c8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -313,6 +355,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4748246700769284089, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748246700769284089, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748246700769284089, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 198693845}
+    - target: {fileID: 4748246700769284089, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4748246700769284089, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7356255827884444811, guid: a88dc6b84e9ca084091a5f4e8c2d29c4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
